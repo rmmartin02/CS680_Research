@@ -1,0 +1,7 @@
+Results
+test 10,000
+short Mean: 472.3312
+long Mean:	428.816
+test 100,000
+short Mean: 472.28408
+long Mean:	430.01816
