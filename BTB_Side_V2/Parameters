@@ -17,7 +17,7 @@ trojan branches (spy branches set to 1)
 13	short 25.5824 long 42.4076
 14	short 25.9156 long 55.5912
 15	short 25.8016 long 52.55
-16	short 25.7564 long 52.486
+#16	short 25.7564 long 52.486
 17	short 26.1424 long 60.9462
 18	short 25.5572 long 58.3932
 
@@ -26,7 +26,7 @@ spy branches (trojans branches set to 2^16)
 1	short 26.9264 long 60.176
 2	short 29.1056 long 75.3236
 3	short 33.31 long 101.1684
-4	short 45.506 long 154.7736
+#4	short 45.506 long 154.7736
 5	short 86.8708 long 273.272
 6	short 146.3328 long 503.4434
 7	short 312.1006 long 969.9684

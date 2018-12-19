@@ -17,6 +17,7 @@
 
 #include "trojanJump.h"
 #include "spyJump.h"
+#include "nops.h"
 
 __attribute__((always_inline)) inline uint64_t rdtsc(){
     unsigned int lo,hi;
@@ -46,7 +47,9 @@ int main(){
 		printf("%lld\n",end_t-start_t);
 		if (i%2){//odd, should cause spy to take longer
 			trojanJump();
-			usleep(SLEEP_T);
+		}
+		else{
+			nops();
 		}
 		//usleep(SLEEP_T);
 		start_t = rdtsc();
@@ -56,3 +59,4 @@ int main(){
 	}
 	return 0;
 }
+//gcc -O0 -o test test.c

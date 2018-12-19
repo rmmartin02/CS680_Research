@@ -17,6 +17,7 @@
 
 #include "spyJump.h"
 #include "trojanJump.h"
+#include "nops.h"
 
 
 void setaffinity(int coreid) {
@@ -34,6 +35,11 @@ int main(){
 		if (time(0)%2){//returns time in seconds
 			trojanJump();
 		}
+		else{
+			nops();
+		}
 	}
 	return 0;
 }
+//gcc -O0 -o trojan trojan.c
+//./spy > out; python plotSpy.py

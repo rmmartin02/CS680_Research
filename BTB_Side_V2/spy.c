@@ -54,3 +54,4 @@ int main(){
 	//printf("%lld\n",avg);
 	return 0;
 }
+//gcc -O0 -o spy spy.c
